@@ -13,6 +13,10 @@ Route.resource("empresas", "EmpresaController")
   .apiOnly()
   .middleware("auth");
 
-  Route.resource("eventos", "EventoController")
-  .apiOnly()
-  .middleware("auth");
+Route.resource("eventos", "EventoController")
+.apiOnly()
+.middleware("auth");
+
+Route.resource("inscricoes", "InscricaoController")
+.apiOnly()
+.middleware("auth");

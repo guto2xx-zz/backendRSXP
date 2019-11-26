@@ -8,9 +8,9 @@ class Evento extends Model {
         return this.belongsTo("App/Models/Empresa");
     }
 
-    // inscricao () {
-    //     return this.hasMany('App/Models/Inscricao')
-    // }
+    inscricao () {
+        return this.hasMany('App/Models/Inscricao')
+    }
 }
 
 module.exports = Evento

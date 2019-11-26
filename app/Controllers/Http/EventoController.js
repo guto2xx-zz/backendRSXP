@@ -6,7 +6,7 @@ const Evento = use("App/Models/Evento");
 class EventoController {
   async index ({ request, response, view }) {
     const evento = Evento.query()
-    // .with("inscricoes")
+    .with("inscricao")
     .fetch();
 
     return evento;
