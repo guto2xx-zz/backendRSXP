@@ -8,3 +8,7 @@ Route.post('/sessions', 'SessionController.create')
 Route.resource("alunos", "AlunoController")
   .apiOnly()
   .middleware("auth");
+  
+Route.resource("empresas", "EmpresaController")
+  .apiOnly()
+  .middleware("auth");
