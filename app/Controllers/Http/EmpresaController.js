@@ -6,7 +6,7 @@ const Empresas = use("App/Models/Empresa");
 class EmpresaController {
   async index ({ request, response, view }) {
     const empresas = Empresas.query()
-    // .with("events")
+    .with("events")
     .fetch();
 
     return empresas;
